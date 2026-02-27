@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+from django.db import models
+
+class Expense(models.Model):
+    amount = models.FloatField()
+    description = models.TextField()
+    date = models.DateField()
+    category = models.CharField(max_length=100)
