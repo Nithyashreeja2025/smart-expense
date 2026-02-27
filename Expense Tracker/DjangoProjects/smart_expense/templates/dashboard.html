@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Header -->
+    <div class="header">
+        <h2>Dashboard</h2>
+        <div class="icons">
+            <span>⚙</span>
+            <span>👤</span>
+        </div>
+    </div>
+
+    <!-- Balance Card -->
+    <div class="balance-card">
+        <p>Total Balance</p>
+        <h1 id="balance">₹0</h1>
+    </div>
+
+    <!-- Summary -->
+    <div class="dashboard-summary">
+        <div class="balance-card">
+            <h3>Income</h3>
+            <div class="amount" id="income">₹0</div>
+        </div>
+
+        <div class="balance-card">
+            <h3>Expense</h3>
+            <div class="amount" id="expense">₹0</div>
+        </div>
+    </div>
+
+
+    <!-- Transactions -->
+    <div class="transactions">
+        <h3>Expenses vs Income</h3>
+        <ul id="txList"></ul>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-card">
+        <canvas id="dashChart" height="300"></canvas>
+    </div>
+
+
+    <a href="/" class="back">⬅ Back Home</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/js/dashboard.js"></script>
+
+</body>
+</html>

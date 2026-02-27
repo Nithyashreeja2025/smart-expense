@@ -1,0 +1,8 @@
+id,description,amount,type,category,date,time,location,payment_mode,note,created_at,month,year,budget,budget_status,remaining_budget
+1,"Payday",5000,income,"Job",2026-02-01,11:31:11,"Chennai","Cash","","2026-02-12T06:01:11.624Z",2,2026,3000,WITHIN_LIMIT,3000
+2,"Pizza",500,expense,"Food",2026-02-02,11:31:37,"Chennai","Cash","","2026-02-12T06:01:37.339Z",2,2026,3000,WITHIN_LIMIT,2500
+3,"Clothes",2000,expense,"Shopping",2026-02-02,11:32:00,"Chennai","UPI","","2026-02-12T06:02:00.316Z",2,2026,3000,WITHIN_LIMIT,500
+4,"Netflix Subscription",200,expense,"Entertainment",2026-02-03,12:56:22,"NA","Card","","2026-02-12T07:26:22.032Z",2,2026,3000,WITHIN_LIMIT,300
+5,"Prime Subscription",1000,expense,"Entertainment",2026-02-04,12:56:58,"Mumbai","Card","","2026-02-12T07:26:58.779Z",2,2026,3000,EXCEEDED,-700
+6,"Electric Bill",500,expense,"Bills",2026-02-01,12:57:47,"Chennai","UPI","","2026-02-12T07:27:47.559Z",2,2026,3000,EXCEEDED,-1200
+7,"Bonus",2500,income,"Job",2026-02-05,12:59:07,"Chennai","Bank","","2026-02-12T07:29:07.527Z",2,2026,3000,EXCEEDED,-1200

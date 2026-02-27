@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget Control</title>
+    <link rel="stylesheet" href="/static/css/budget.css">
+</head>
+<body>
+
+<div class="budget-container">
+
+    <h1>Budget Overrun Control System</h1>
+
+    <div class="budget-card">
+        <h3>Set Monthly Budget</h3>
+        <input type="number" id="budgetAmount" placeholder="Enter Budget Amount ₹">
+        <button onclick="setBudget()">Set Budget</button>
+    </div>
+
+    <div class="status-card">
+        <h3>Status</h3>
+        <p>Total Budget: <span id="totalBudget">₹0</span></p>
+        <p>Total Expense: <span id="totalExpense">₹0</span></p>
+        <p>Remaining: <span id="remaining">₹0</span></p>
+    </div>
+
+    <div class="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+    <div id="warning" class="warning">
+        ⚠ BUDGET OVERRUN DETECTED!
+    </div>
+
+    <a href="/" class="back">⬅ Back Home</a>
+
+</div>
+
+<script src="/static/js/budget.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@import url("/static/css/style.css");
+
+.dashboard, .budget-container{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}

@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    margin:0;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+    min-height:100vh;
+}
+
+/* Containers */
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
+
+/* Titles */
+h1,h2,h3{
+    text-align:center;
+}
+
+/* Cards */
+.card, .budget-card, .status-card, .balance-card, .transactions, .history-list{
+    background: rgba(255,255,255,0.08);
+    border-radius:16px;
+    padding:20px;
+    margin:15px 0;
+    backdrop-filter: blur(8px);
+}
+
+/* Buttons */
+.btn, button{
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+    text-align:center;
+    transition:0.3s;
+}
+
+.btn:hover, button:hover{
+    transform:scale(1.03);
+    opacity:0.9;
+}
+
+/* Button group */
+.button-group{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* Inputs */
+input, select{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:none;
+    margin:8px 0;
+}
+
+/* Back button */
+.back{
+    display:inline-block;
+    margin:25px auto 0;
+    padding:12px 22px;
+    border-radius:10px;
+    text-align:center;
+    background: linear-gradient(135deg,#ff512f,#dd2476);
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+    box-shadow:0 0 12px rgba(255,80,80,0.5);
+}
+
+
+/* Summary */
+.summary{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+/* History */
+/* History button box */
+.history-box{
+    background: rgba(255,255,255,0.08);
+    padding:15px;
+    border-radius:14px;
+    backdrop-filter: blur(8px);
+}
+
+.history-btn{
+    width:100%;
+    background: linear-gradient(135deg,#8e2de2,#4a00e0);
+}
+
+.history-controls{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.history-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.history-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.1);
+}
+
+.history-item.income{ border-left:4px solid #00ff99; }
+.history-item.expense{ border-left:4px solid #ff4d4d; }
+
+.amt.income{ color:#00ff99; }
+.amt.expense{ color:#ff4d4d; }
+
+/* Danger button */
+.danger{
+    background: linear-gradient(135deg,#ff416c,#ff4b2b);
+}
+
+/* Empty */
+.empty{
+    text-align:center;
+    opacity:0.6;
+}
+
+/* Feature buttons */
+.btn-expense{
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
+}
+
+.btn-report{
+    background: linear-gradient(135deg,#7f00ff,#e100ff);
+}
+
+.btn-dashboard{
+    background: linear-gradient(135deg,#00b09b,#96c93d);
+}
+
+.btn-budget{
+    background: linear-gradient(135deg,#ff8c00,#ff3d00);
+}
+
+/* Dashboard graph visibility */
+canvas{
+    background: transparent !important;
+}
+
+/* Chart container */
+.chart-card{
+    background: rgba(255,255,255,0.08);
+    border-radius:18px;
+    min-height:200px;
+    padding:25px;
+    backdrop-filter: blur(10px);
+}
+
+/* Chart labels fix */
+.chartjs-render-monitor{
+    color:#ffffff !important;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense History</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>📜 Full Transaction History</h2>
+
+    <div class="history-controls">
+        <input type="text" id="search" placeholder="Search description / category">
+        <select id="filterType">
+            <option value="all">All</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+    </div>
+
+    <div class="history-list" id="historyList"></div>
+
+    <div class="history-actions">
+        <button onclick="clearHistory()" class="danger">🗑 Clear All Data</button>
+    </div>
+
+    <a href="/expenses/" class="back">⬅ Back to Expenses</a>
+</div>
+
+<script src="/static/js/history.js"></script>
+</body>
+</html>

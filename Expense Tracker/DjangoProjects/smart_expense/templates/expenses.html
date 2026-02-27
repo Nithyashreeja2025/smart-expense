@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expenses</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Expense Data Capture & Management</h2>
+    <div class="history-box">
+        <a href="/history/" class="btn history-btn">
+            📜 View Full History
+        </a>
+    </div>
+
+    <div class="card">
+        <input type="text" id="desc" placeholder="Description">
+
+        <input type="number" id="amount" placeholder="Amount">
+
+        <select id="type">
+            <option value="expense">Expense</option>
+            <option value="income">Income</option>
+        </select>
+
+        <input type="date" id="date">
+
+        <input type="text" id="location" placeholder="Location">
+
+        <input type="text" id="category" placeholder="Category (Food, Travel, Salary...)">
+
+        <select id="payment">
+            <option value="Cash">Cash</option>
+            <option value="UPI">UPI</option>
+            <option value="Card">Card</option>
+            <option value="Bank">Bank Transfer</option>
+        </select>
+
+        <input type="text" id="notes" placeholder="Notes (optional)">
+
+        <button onclick="addExpense()">Add</button>
+    </div>
+
+
+    <ul id="expenseList"></ul>
+
+    <div class="summary">
+        <p>Income: <span id="income">₹0</span></p>
+        <p>Expense: <span id="expense">₹0</span></p>
+        <p>Balance: <span id="balance">₹0</span></p>
+    </div>
+
+    <a href="/" class="back">⬅ Back Home</a>
+</div>
+
+<script src="/static/js/expenses.js"></script>
+</body>
+</html>
