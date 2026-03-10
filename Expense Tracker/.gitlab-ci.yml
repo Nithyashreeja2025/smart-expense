@@ -1,0 +1,37 @@
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  PYTHON_VERSION: "3.10"
+
+before_script:
+  - python --version
+  - pip install -r requirements.txt
+
+build_job:
+  stage: build
+  script:
+    - echo "Build stage started"
+    - python manage.py collectstatic --noinput
+  only:
+    - main
+    - develop
+
+test_job:
+  stage: test
+  script:
+    - echo "Running tests"
+    - python manage.py test
+  only:
+    - main
+    - develop
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Deployment stage"
+    - echo "Simulating deployment..."
+  only:
+    - main

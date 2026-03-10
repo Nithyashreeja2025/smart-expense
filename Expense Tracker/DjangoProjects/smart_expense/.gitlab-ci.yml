@@ -1,0 +1,28 @@
+stages:
+  - build
+  - test
+  - deploy
+
+image: python:3.10
+
+before_script:
+  - pip install -r requirements.txt
+
+build_job:
+  stage: build
+  script:
+    - echo "Build stage started"
+    - python manage.py check
+
+test_job:
+  stage: test
+  script:
+    - echo "Running Django tests"
+    - python manage.py test
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Simulated deployment successful"
+  only:
+    - main
